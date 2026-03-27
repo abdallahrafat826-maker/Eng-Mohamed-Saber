@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="google04f28ad75405ebe7"
+<title>مهندس محمد صابر</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    direction: rtl;
+    background: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url('13.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    font-family: fa 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Services */
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+#gallery img {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Popup */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#popup img {
+    height: 80%;
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0,0,0,0.5);
+}
+
+/* Contact */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#content {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>مهندس محمد صابر</h1>
+    <p>تصميم وتشطيب ديكور حديث</p>
+</header>
+
+<nav>
+    <a href="#services">الخدمات</a> &nbsp;|&nbsp;
+    <a href="#gallery">أعمالنا</a> &nbsp;|&nbsp;
+    <a href="#contact">تواصل</a>
+</nav>
+
+<section class="hero">
+    <h1>نحول منزلك لتحفة فنية</h1>
+</section>
+
+<section id="services">
+    <h2>خدماتنا</h2>
+    <div class="service-box">
+        <div class="box">تصميم داخلي</div>
+        <div class="box">تشطيبات</div>
+        <div class="box">ديكور مودرن</div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>أعمالنا</h2>
+    <div class="slider-wrapper">
+    <img src="1.jpg"/>
+    <img src="2.jpg"/>
+    <img src="3.jpg"/>
+    <img src="4.jpg"/>
+    <img src="5.jpg"/>
+    <img src="6.jpg"/>
+    <img src="7.jpg"/>
+    <img src="8.jpg"/>
+    <img src="9.jpg"/>
+    <img src="10.jpg"/>
+    <img src="11.jpg"/>
+    <img src="12.jpg"/>
+    </div>
+</section>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <img id="popupImg">
+</div>
+<div id="content">
+    <p> لتفاصيل الاسعار لكل بند اضغط على ايقونة الوتساب  </p>
+</div>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+
+    <input type="text" id="name" placeholder="اسمك">
+    <textarea id="msg" placeholder="رسالتك"></textarea>
+    <br>
+    <button onclick="sendMsg()">إرسال</button>
+</section>
+
+<div class="whatsapp" onclick="openWhats()">💬</div>
+
+<footer>
+    <p>© مهندس محمد صابر</p>
+</footer>
+
+<script>
+
+// WhatsApp
+function openWhats(){
+    let message = "مرحبا، اريد الاستفسار عن خدمات الديكور";
+    let url = "https://wa.me/201099181222?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+
+// Send Message
+function sendMsg(){
+    let name = document.getElementById("name").value;
+    let msg = document.getElementById("msg").value;
+
+
+
+    if(name.trim() === "" || msg.trim() === ""){
+
+        alert("يا هندسه اكتب الاسم و الرسالة الأول");
+        return;
+    }
+    let text = "الاسم: " + name + "\nالرسالة: "  + msg;
+    let encodedText = encodeURIComponent(text);
+    let phoneNumber = "01276525341";
+    let url = "https://wa.me/201099181222" + phoneNumber + "?text=" +encodedText;
+    window.open(url, "_blank");
+
+    alert("تم ارسال رسالتك يا " + name);
+}
+
+// Gallery Popup
+let images = document.querySelectorAll("#gallery img");
+let popup = document.getElementById("popup");
+let popupImg = document.getElementById("popupImg");
+
+images.forEach(img => {
+    img.onclick = () => {
+        popup.style.display = "flex";
+        popupImg.src = img.src;
+    };
+});
+
+popup.onclick = (e) => {
+    if (e.target !== popupImg) {
+    popup.style.display = "none";
+ }
+};
+</script>
+</body>
+</html>
